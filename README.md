@@ -34,7 +34,6 @@ This project is licensed with MIT License.
 ## Contribution
 Feel free to contribute to this project. Any kind of contribution is really appreciated.
 
-
 1. Телефон (Android)
 2. Программа Termux (эмулятор линукс)
 3. Интернет на телефоне ( Лучше WiFi )
